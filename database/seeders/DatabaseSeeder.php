@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        $this->call(UsuariosSeeder::class);
+        //$this->call(kitsSeeder::class);
+
+        cursosRobotica::factory(100)->create();
     }
 }
